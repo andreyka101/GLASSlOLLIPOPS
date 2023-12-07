@@ -1,4 +1,5 @@
 import './interfaces_GLASSlOLLIPOPS.scss'
+import './style.scss'
 import LiveBackgroundMod from './live_background.ts'
 
 

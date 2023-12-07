@@ -30,15 +30,15 @@ body{
 
 .GLASSlOLLIPOPS_div{
   width: 85%;
-  background-color: #a8e4a052;
-  // background-color: #fdca9352;
-  // background-color: #ece9b252;
-  // background-color: #f3ffab52;
-  // background-color: #abfff252;
-  // background-color: #a1c9df52;
-  // background-color: #a5a1df52;
-  // background-color: #d49fdf52;
-  // background-color: #efb2b252;
+  background-color: #a8e4a052; // 1 background-div
+  // background-color: #fdca9352; // 2 background-div
+  // background-color: #ece9b252; // 3 background-div
+  // background-color: #f3ffab52; // 4 background-div
+  // background-color: #abfff252; // 5 background-div
+  // background-color: #a1c9df52; // 6 background-div
+  // background-color: #a5a1df52; // 7 background-div
+  // background-color: #d49fdf52; // 8 background-div
+  // background-color: #efb2b252; // 9 background-div
   backdrop-filter: blur(40px);
   border-radius: 15px;
   padding: 25px;
@@ -50,14 +50,14 @@ body{
 .GLASSlOLLIPOPS_button{
   font-size: 16px;
   font-family: "junegull1", "junegull2", "junegull3";
-  // background-color: #18ffc46e; // 1 background-button
+  background-color: #18ffc46e; // 1 background-button
   // background-color: #ff18186e; // 2 background-button
   // background-color: #00dd1b6e; // 3 background-button
   // background-color: #efe9196e; // 4 background-button
   // background-color: #ff8d186e; // 5 background-button
   // background-color: #ABCDEF6e; // 6 background-button
   // background-color: #D870936e; // 7 background-button
-  background-color: #62639B6e; // 8 background-button
+  // background-color: #62639B6e; // 8 background-button
   color: #000000;
   border-radius: 8px;
   padding: 5px 8px;
@@ -152,14 +152,14 @@ body{
 
 
 .GLASSlOLLIPOPS_button:hover{
-  // background-color: #18ffc4; // 1 background-button
+  background-color: #18ffc4; // 1 background-button
   // background-color: #ff1818; // 2 background-button
   // background-color: #00dd1b; // 3 background-button
   // background-color: #efe919; // 4 background-button
   // background-color: #ff8d18; // 5 background-button
   // background-color: #ABCDEF; // 6 background-button
   // background-color: #D87093; // 7 background-button
-  background-color: #62639B; // 8 background-button
+  // background-color: #62639B; // 8 background-button
   transition: 0.3s;
   cursor: pointer;
 }
