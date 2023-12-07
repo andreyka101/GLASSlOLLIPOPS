@@ -1,0 +1,188 @@
+@font-face{
+  font-family: junegull1;
+  src: url(/junegull/junegull-regular.ttf);
+}
+@font-face{
+  font-family: junegull2;
+  src: url(/junegull/junegull-regular.woff);
+}
+@font-face{
+  font-family: junegull3;
+  src: url(/junegull/junegull-regular.woff2);
+}
+body{
+  background-color: #292929;
+  margin: 0;
+  color: #ffffff;
+  font-family: "junegull1", "junegull2", "junegull3";
+}
+#body{
+  font-size: 17px;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  z-index: 1;
+  
+  
+}
+
+.GLASSlOLLIPOPS_div{
+  width: 85%;
+  background-color: #a8e4a052;
+  // background-color: #fdca9352;
+  // background-color: #ece9b252;
+  // background-color: #f3ffab52;
+  // background-color: #abfff252;
+  // background-color: #a1c9df52;
+  // background-color: #a5a1df52;
+  // background-color: #d49fdf52;
+  // background-color: #efb2b252;
+  backdrop-filter: blur(40px);
+  border-radius: 15px;
+  padding: 25px;
+  margin: 10px auto;
+  .GLASSlOLLIPOPS_div{
+    border: #ffffff 2.5px solid;
+  }
+}
+.GLASSlOLLIPOPS_button{
+  font-size: 16px;
+  font-family: "junegull1", "junegull2", "junegull3";
+  // background-color: #18ffc46e; // 1 background-button
+  // background-color: #ff18186e; // 2 background-button
+  // background-color: #00dd1b6e; // 3 background-button
+  // background-color: #efe9196e; // 4 background-button
+  // background-color: #ff8d186e; // 5 background-button
+  // background-color: #ABCDEF6e; // 6 background-button
+  // background-color: #D870936e; // 7 background-button
+  background-color: #62639B6e; // 8 background-button
+  color: #000000;
+  border-radius: 8px;
+  padding: 5px 8px;
+  margin: 2px;
+  border: #292929 2.5px solid;
+  transition: 0.3s;
+}
+.GLASSlOLLIPOPS_a{
+  font-size: 16px;
+  font-family: "junegull1", "junegull2", "junegull3";
+  // background-color: #0e93716e; // 1 background-a
+  // background-color: #9327276e; // 2 background-a
+  // background-color: #146d1f6e; // 3 background-a
+  // background-color: #8b870d6e; // 4 background-a
+  background-color: #834f196e; // 5 background-a
+  // background-color: #2965a16e; // 6 background-a
+  // background-color: #7e08306e; // 7 background-a
+  // background-color: #0f12936e; // 8 background-a
+  // color: #9fafff; // 1 color_border-a
+  // color: #c09fff; // 2 color_border-a
+  color: #e9cd8f; // 3 color_border-a
+  // color: #8fe9a2; // 4 color_border-a
+  border-radius: 8px;
+  padding: 5px 8px;
+  margin: 2px;
+  // border: #9fafff 2.5px solid; // 1 color_border-a
+  // border: #c09fff 2.5px solid; // 2 color_border-a
+  border: #e9cd8f 2.5px solid; // 3 color_border-a
+  // border: #8fe9a2 2.5px solid; // 4 color_border-a
+  transition: 0.3s;
+  text-decoration: none;
+}
+.GLASSlOLLIPOPS_span{
+  display: inline-block;
+  background-color: #292929;
+  border-radius: 8px;
+  padding: 5px 8px;
+  margin: 2px;
+  .GLASSlOLLIPOPS_span{
+    border: #ffffff 2px solid;
+  }
+  .GLASSlOLLIPOPS_button{
+    border: #ffffff 2.5px solid;
+  }
+}
+.GLASSlOLLIPOPS_header{
+  border: #ffffff 3.5px solid;
+  border-top: 0;
+  width: 76%;
+  background-color: #ff4e756e;
+  // background-color: #9b32c76e;
+  // background-color: #5e41fb6e;
+  backdrop-filter: blur(40px);
+  border-radius: 0 0 81px 81px;
+  padding: 20px 40px 30px;
+  margin: 10px auto;
+  margin-top: 0;
+  margin-bottom: 40px;
+}
+.GLASSlOLLIPOPS_checkbox{
+  display: none;
+}
+.GLASSlOLLIPOPS_checkbox+label{
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  border-radius: 3px;
+  background-color: #ffffff6e;
+  transition: 0.3s;
+  margin: auto 10px;
+}
+.GLASSlOLLIPOPS_checkbox:checked+label{
+  background: url("/svg/check_ailr35g5hnkk.svg") center / cover;
+  background-color: #ffffff6e;
+  transition: 0.3s;
+}
+.GLASSlOLLIPOPS_color{
+  display: inline-block;
+  // width: 18px;
+  // height: 18px;
+  border-radius: 3px;
+  background-color: #0000006e;
+  border: none;
+  transition: 0.3s;
+  margin: auto 10px;
+}
+
+
+
+// hover
+
+
+
+.GLASSlOLLIPOPS_button:hover{
+  // background-color: #18ffc4; // 1 background-button
+  // background-color: #ff1818; // 2 background-button
+  // background-color: #00dd1b; // 3 background-button
+  // background-color: #efe919; // 4 background-button
+  // background-color: #ff8d18; // 5 background-button
+  // background-color: #ABCDEF; // 6 background-button
+  // background-color: #D87093; // 7 background-button
+  background-color: #62639B; // 8 background-button
+  transition: 0.3s;
+  cursor: pointer;
+}
+.GLASSlOLLIPOPS_a:hover{
+  // background-color: #0e9371; // 1 background-a
+  // background-color: #932727; // 2 background-a
+  // background-color: #146d1f; // 3 background-a
+  // background-color: #8b870d; // 4 background-a
+  background-color: #834f19; // 5 background-a
+  // background-color: #2965a1; // 6 background-a
+  // background-color: #7e0830; // 7 background-a
+  // background-color: #0f1293; // 8 background-a
+  color: #ffffff;
+  border: #ffffff 2.5px solid;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.GLASSlOLLIPOPS_checkbox+label:hover{
+  background-color: #ffffff;
+  transition: 0.3s;
+}
+.GLASSlOLLIPOPS_checkbox:checked+label:hover{
+  background: url("/svg/check_ailr35g5hnkkHover.svg") center / cover;
+  background-color: #ffffff;
+  transition: 0.3s;
+}
