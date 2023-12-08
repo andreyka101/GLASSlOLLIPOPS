@@ -1,14 +1,14 @@
 @font-face{
   font-family: junegull1;
-  src: url(/junegull/junegull-regular.ttf);
+  src: url(/GLASSlOLLIPOPS_public/junegull/junegull-regular.ttf);
 }
 @font-face{
   font-family: junegull2;
-  src: url(/junegull/junegull-regular.woff);
+  src: url(/GLASSlOLLIPOPS_public/junegull/junegull-regular.woff);
 }
 @font-face{
   font-family: junegull3;
-  src: url(/junegull/junegull-regular.woff2);
+  src: url(/GLASSlOLLIPOPS_public/junegull/junegull-regular.woff2);
 }
 body{
   background-color: #292929;
@@ -130,7 +130,7 @@ body{
   margin: auto 10px;
 }
 .GLASSlOLLIPOPS_checkbox:checked+label{
-  background: url("/svg/check_ailr35g5hnkk.svg") center / cover;
+  background: url("/GLASSlOLLIPOPS_public/svg/check_ailr35g5hnkk.svg") center / cover;
   background-color: #ffffff6e;
   transition: 0.3s;
 }
@@ -182,7 +182,7 @@ body{
   transition: 0.3s;
 }
 .GLASSlOLLIPOPS_checkbox:checked+label:hover{
-  background: url("/svg/check_ailr35g5hnkkHover.svg") center / cover;
+  background: url("/GLASSlOLLIPOPS_public/svg/check_ailr35g5hnkkHover.svg") center / cover;
   background-color: #ffffff;
   transition: 0.3s;
 }
