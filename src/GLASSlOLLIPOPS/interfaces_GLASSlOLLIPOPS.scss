@@ -1,3 +1,10 @@
+// <!--  class="GLASSlOLLIPOPS_div" -->
+// <!--  class="GLASSlOLLIPOPS_span" -->
+// <!--  class="GLASSlOLLIPOPS_header" -->
+// <!--  class="GLASSlOLLIPOPS_button" -->
+// <!--  class="GLASSlOLLIPOPS_a" -->
+// <!--  class="GLASSlOLLIPOPS_checkbox" -->
+// <!--  class="GLASSlOLLIPOPS_color" -->
 @font-face{
   font-family: junegull1;
   src: url(/GLASSlOLLIPOPS_public/junegull/junegull-regular.ttf);
@@ -152,38 +159,64 @@ body{
 
 
 
-.GLASSlOLLIPOPS_button:hover{
-  background-color: #18ffc4; // 1 background-button
-  // background-color: #ff1818; // 2 background-button
-  // background-color: #00dd1b; // 3 background-button
-  // background-color: #efe919; // 4 background-button
-  // background-color: #ff8d18; // 5 background-button
-  // background-color: #ABCDEF; // 6 background-button
-  // background-color: #D87093; // 7 background-button
-  // background-color: #62639B; // 8 background-button
-  transition: 0.3s;
-  cursor: pointer;
+@media screen and (min-width: 800px) {
+  .GLASSlOLLIPOPS_button:hover{
+    background-color: #18ffc4; // 1 background-button
+    // background-color: #ff1818; // 2 background-button
+    // background-color: #00dd1b; // 3 background-button
+    // background-color: #efe919; // 4 background-button
+    // background-color: #ff8d18; // 5 background-button
+    // background-color: #ABCDEF; // 6 background-button
+    // background-color: #D87093; // 7 background-button
+    // background-color: #62639B; // 8 background-button
+    transition: 0.3s;
+    cursor: pointer;
+  }
+  .GLASSlOLLIPOPS_a:hover{
+    background-color: #0e9371; // 1 background-a
+    // background-color: #932727; // 2 background-a
+    // background-color: #146d1f; // 3 background-a
+    // background-color: #8b870d; // 4 background-a
+    // background-color: #834f19; // 5 background-a
+    // background-color: #2965a1; // 6 background-a
+    // background-color: #7e0830; // 7 background-a
+    // background-color: #0f1293; // 8 background-a
+    color: #ffffff;
+    border: #ffffff 2.5px solid;
+    transition: 0.3s;
+    cursor: pointer;
+  }
+  .GLASSlOLLIPOPS_checkbox+label:hover{
+    background-color: #ffffff;
+    transition: 0.3s;
+  }
+  .GLASSlOLLIPOPS_checkbox:checked+label:hover{
+    background: url("/GLASSlOLLIPOPS_public/svg/check_ailr35g5hnkkHover.svg") center / cover;
+    background-color: #ffffff;
+    transition: 0.3s;
+  }
 }
-.GLASSlOLLIPOPS_a:hover{
-  background-color: #0e9371; // 1 background-a
-  // background-color: #932727; // 2 background-a
-  // background-color: #146d1f; // 3 background-a
-  // background-color: #8b870d; // 4 background-a
-  // background-color: #834f19; // 5 background-a
-  // background-color: #2965a1; // 6 background-a
-  // background-color: #7e0830; // 7 background-a
-  // background-color: #0f1293; // 8 background-a
-  color: #ffffff;
-  border: #ffffff 2.5px solid;
-  transition: 0.3s;
-  cursor: pointer;
+
+
+// media screen
+
+
+@media screen and (max-width: 490px) {
+  .GLASSlOLLIPOPS_header{
+    padding: 10px 25px 10px;
+  }
 }
-.GLASSlOLLIPOPS_checkbox+label:hover{
-  background-color: #ffffff;
-  transition: 0.3s;
+@media screen and (max-width: 340px) {
+  .GLASSlOLLIPOPS_header{
+    h1{
+      font-size: 29px;
+    }
+  }
 }
-.GLASSlOLLIPOPS_checkbox:checked+label:hover{
-  background: url("/GLASSlOLLIPOPS_public/svg/check_ailr35g5hnkkHover.svg") center / cover;
-  background-color: #ffffff;
-  transition: 0.3s;
+@media screen and (max-width: 250px) {
+  .GLASSlOLLIPOPS_header{
+    h1{
+      font-size: 26px;
+    }
+  }
 }
