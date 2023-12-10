@@ -4,4 +4,5 @@ import LiveBackgroundMod from './GLASSlOLLIPOPS/live_background.ts'
 
 
 let liveBackground = new LiveBackgroundMod()
-liveBackground.startAnimationClassic()
+// liveBackground.startAnimationClassic()
+liveBackground.pyp.startAnimationClassic()
