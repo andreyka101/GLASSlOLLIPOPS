@@ -177,6 +177,13 @@ font-size: 15px;
 .GLASSlOLLIPOPS_input[type="text"]::-moz-placeholder { color: #ffffff8c; }
 .GLASSlOLLIPOPS_input[type="text"]::-webkit-input-placeholder { color: #ffffff8c; }
 
+.GLASSlOLLIPOPS_select{
+  border-radius: 20px;
+  option::after{
+    border-radius: 20px;
+
+  }
+}
 
 
 // hover
