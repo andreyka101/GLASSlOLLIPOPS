@@ -156,7 +156,7 @@ body{
   margin: auto 10px;
 }
 
-// до делать
+// до делать ^^^^^
 
 .GLASSlOLLIPOPS_input[type="text"]{ 
   background-color: #a8e4a052; // 1 background-div
@@ -176,6 +176,63 @@ font-size: 15px;
 }
 .GLASSlOLLIPOPS_input[type="text"]::-moz-placeholder { color: #ffffff8c; }
 .GLASSlOLLIPOPS_input[type="text"]::-webkit-input-placeholder { color: #ffffff8c; }
+
+.GLASSlOLLIPOPS_input[type="email"]{ 
+  background-color: #6db86352; // 1 background-div
+  // background-color: #fdca9352; // 2 background-div
+  // background-color: #ece9b252; // 3 background-div
+  // background-color: #f3ffab52; // 4 background-div
+  // background-color: #abfff252; // 5 background-div
+  // background-color: #a1c9df52; // 6 background-div
+  // background-color: #a5a1df52; // 7 background-div
+  // background-color: #d49fdf52; // 8 background-div
+  // background-color: #efb2b252; // 9 background-div
+color:#ffffffcc;
+border: #ffffff 0px solid;
+border-radius: 7px;
+padding: 7px;
+font-size: 15px;
+}
+.GLASSlOLLIPOPS_input[type="email"]::-moz-placeholder { color: #ffffff8c; }
+.GLASSlOLLIPOPS_input[type="email"]::-webkit-input-placeholder { color: #ffffff8c; }
+
+.GLASSlOLLIPOPS_input[type="number"]{ 
+  background-color: #6db86352; // 1 background-div
+  // background-color: #fdca9352; // 2 background-div
+  // background-color: #ece9b252; // 3 background-div
+  // background-color: #f3ffab52; // 4 background-div
+  // background-color: #abfff252; // 5 background-div
+  // background-color: #a1c9df52; // 6 background-div
+  // background-color: #a5a1df52; // 7 background-div
+  // background-color: #d49fdf52; // 8 background-div
+  // background-color: #efb2b252; // 9 background-div
+color:#ffffffcc;
+border: #ffffff 0px solid;
+border-radius: 7px;
+padding: 7px;
+font-size: 15px;
+}
+.GLASSlOLLIPOPS_input[type="number"]::-moz-placeholder { color: #ffffff8c; }
+.GLASSlOLLIPOPS_input[type="number"]::-webkit-input-placeholder { color: #ffffff8c; }
+
+.GLASSlOLLIPOPS_input[type="password"]{ 
+  background-color: #6db86352; // 1 background-div
+  // background-color: #fdca9352; // 2 background-div
+  // background-color: #ece9b252; // 3 background-div
+  // background-color: #f3ffab52; // 4 background-div
+  // background-color: #abfff252; // 5 background-div
+  // background-color: #a1c9df52; // 6 background-div
+  // background-color: #a5a1df52; // 7 background-div
+  // background-color: #d49fdf52; // 8 background-div
+  // background-color: #efb2b252; // 9 background-div
+color:#ffffffcc;
+border: #ffffff 0px solid;
+border-radius: 7px;
+padding: 7px;
+font-size: 15px;
+}
+.GLASSlOLLIPOPS_input[type="password"]::-moz-placeholder { color: #ffffff8c; }
+.GLASSlOLLIPOPS_input[type="password"]::-webkit-input-placeholder { color: #ffffff8c; }
 
 .GLASSlOLLIPOPS_select{
   border-radius: 20px;
