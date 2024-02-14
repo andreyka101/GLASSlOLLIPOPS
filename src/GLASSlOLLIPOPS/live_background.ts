@@ -22,7 +22,7 @@ class ClassicPC {
       for (let i in this.#arraySVG) {
         let element = document.querySelector(`#backgroundSVG_${i}`) as HTMLElement
         element.style.cssText += `
-  fill : #${color[Math.round(Math.random() * (30 - 0) + 0)]};
+  fill : #${color[Math.round(Math.random() * (color.length - 1) + 0)]};
   width: ${Math.round(Math.random() * ((document.documentElement.clientWidth / 3.7) - 30) + 30)}px;
   height: ${Math.round(Math.random() * ((document.documentElement.clientWidth / 3.7) - 30) + 30)}px;
   top: 0;
@@ -56,7 +56,7 @@ class ClassicPC {
           for (let i in this.#arraySVG) {
             let element = document.querySelector(`#backgroundSVG_${i}`) as HTMLElement
             element.style.cssText += `
-    fill : #${color[Math.round(Math.random() * (30 - 0) + 0)]};
+    fill : #${color[Math.round(Math.random() * (color.length - 1) + 0)]};
     width: ${Math.round(Math.random() * ((document.documentElement.clientWidth / 3.7) - 30) + 30)}px;
     height: ${Math.round(Math.random() * ((document.documentElement.clientWidth / 3.7) - 30) + 30)}px;
     transform: translate(${(Math.random() * ((document.documentElement.clientWidth - 200) - -100) + -100).toFixed(1)}px, ${(Math.random() * ((document.documentElement.clientHeight - 200) - -100) + -100).toFixed(1)}px) rotate(${Math.round(Math.random() * (360 - 0) + 0)}deg);
@@ -95,7 +95,7 @@ class ClassicPhone {
       for (let i of this.#nameIdDiv) {
         let element = document.querySelector(`#backgroundDIV_${i}`) as HTMLElement
         element.style.cssText += `
-    background-color : #${color[Math.round(Math.random() * (30 - 0) + 0)]};
+    background-color : #${color[Math.round(Math.random() * (color.length - 1) + 0)]};
     width: 100%;
     height: ${Math.round(Math.random() * (100 - 20) + 20)}px;
     top: 0;
@@ -119,7 +119,7 @@ class ClassicPhone {
         for (let i of this.#nameIdDiv) {
           let element = document.querySelector(`#backgroundDIV_${i}`) as HTMLElement
           element.style.cssText += `
-      background-color : #${color[Math.round(Math.random() * (30 - 0) + 0)]};
+      background-color : #${color[Math.round(Math.random() * (color.length - 1) + 0)]};
       height: ${Math.round(Math.random() * (100 - 20) + 20)}px;
       transform: translateY(${(Math.random() * ((document.documentElement.clientHeight + 100) - -100) + -100).toFixed(1)}px);
       filter: blur(${Math.round(Math.random() * (30 - 10) + 10)}px);
@@ -130,12 +130,24 @@ class ClassicPhone {
   }
 }
 
+// DeleteColor
+class Color{
+  deleteALL(){
+    color = []
+  }
+  append(arr:Array<string>){
+    color.push(...arr)
+    console.log(color);
+    
+  }
+}
 
 
 
 export default class LiveBackgroundMod {
-  backgroundPC = new BackgroundPC()
-  backgroundPhone = new BackgroundPhone()
+  BackgroundPC = new BackgroundPC()
+  BackgroundPhone = new BackgroundPhone()
+  Color = new Color()
 }
 class BackgroundPC {
   Classic = new ClassicPC()
