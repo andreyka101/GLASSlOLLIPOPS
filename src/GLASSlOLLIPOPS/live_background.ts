@@ -130,15 +130,78 @@ class ClassicPhone {
   }
 }
 
-// DeleteColor
-class Color{
-  deleteALL(){
+// LightBulbsPC
+
+class LightBulbsPC {
+  #body = document.querySelector('body') as HTMLBodyElement
+  #grid: any
+  #str = "" as string
+  #colum = "grid-template-columns:" as string
+  #row = "grid-template-rows:" as string
+
+  start() {
+    console.log(document.documentElement.clientWidth / 120);
+
+    if (document.documentElement.clientWidth >= 850) {
+
+      for (let i = 0; i != Math.floor(document.documentElement.clientWidth / 120); i++) {
+        this.#colum += "100px "
+      }
+      for (let i = 0; i != Math.floor(document.documentElement.clientHeight / 120); i++) {
+        this.#row += "100px "
+      }
+
+      this.#str = `<div class="lightBulbs" style="display: grid; justify-content: space-around; ${this.#colum}; grid-auto-rows:${this.#row}; gap: 20px;position: fixed;width: 100%;height: 100%;">`
+
+      for (let i = 0; i != Math.floor(document.documentElement.clientWidth / 120); i++) {
+        for (let i = 0; i != Math.floor(document.documentElement.clientHeight / 120); i++) {
+          this.#str += `<div style="width: 100px;height: 100px;background-color: #${color[Math.round(Math.random() * (color.length - 1) + 0)]}; border-radius: 50px;"></div>`
+        }
+      }
+      this.#str += `</div>`
+      this.#body.innerHTML += this.#str
+
+      setTimeout(() => {
+        this.#grid = document.querySelectorAll('.lightBulbs div') as Record<number,HTMLDivElement>
+        // for (let i in this.#grid) {
+        //   this.#grid[i].style.filter = "opacity(0)"
+        // }
+        this.#grid.map(function (n:any) {
+          n.style.filter.webkitFilte = "opacity(0)"
+        })
+
+        setTimeout(() => {
+          this.#str = `<div style="display: grid; justify-content: space-around; ${this.#colum}; grid-auto-rows:${this.#row}; gap: 20px;position: fixed;width: 100%;height: 100%;">`
+
+          for (let i = 0; i != Math.floor(document.documentElement.clientWidth / 120); i++) {
+            for (let i = 0; i != Math.floor(document.documentElement.clientHeight / 120); i++) {
+              this.#str += `<div style="width: 100px;height: 100px;background-color: #${color[Math.round(Math.random() * (color.length - 1) + 0)]}; border-radius: 50px;"></div>`
+            }
+          }
+          this.#str += `</div>`
+          this.#body.innerHTML += this.#str
+          // setTimeout(() => {
+          //   this.#grid = document.querySelectorAll('.lightBulbs div')
+          //   for (let i in this.#grid) {
+          //     this.#grid[i].style.filter = "opacity(1)"
+          //   }
+          // }, 1000)
+        }, 1000)
+      }, 15000)
+    }
+  }
+}
+
+
+
+// Color
+class Color {
+  deleteALL() {
     color = []
   }
-  append(arr:Array<string>){
+  append(arr: Array<string>) {
     color.push(...arr)
-    console.log(color);
-    
+
   }
 }
 
@@ -151,6 +214,7 @@ export default class LiveBackgroundMod {
 }
 class BackgroundPC {
   Classic = new ClassicPC()
+  LightBulbs = new LightBulbsPC()
 }
 class BackgroundPhone {
   Classic = new ClassicPhone()

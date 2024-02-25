@@ -18,3 +18,7 @@ let liveBackground = new LiveBackgroundMod()
 // liveBackground.Color.append(["ff7575" , "ffffff"])
 liveBackground.BackgroundPC.Classic.start()
 liveBackground.BackgroundPhone.Classic.start()
+
+// liveBackground.BackgroundPC.LightBulbs.start()
+
+
