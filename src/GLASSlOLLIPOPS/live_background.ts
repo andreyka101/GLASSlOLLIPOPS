@@ -165,23 +165,24 @@ class LightBulbsPC {
       this.#body.innerHTML += this.#str
 
       setInterval(() => {
+        this.#lightBulbs = document?.querySelector('.lightBulbs')
         this.#grid = document?.querySelectorAll('.lightBulbs div') as NodeListOf<HTMLDivElement>
         for (let i of this.#grid) {
           i.style.filter = "opacity(0)"
         }
 
         setTimeout(() => {
-          this.#str = `<div style="display: grid; justify-content: space-around; ${this.#colum}; grid-auto-rows:${this.#row}; gap: 20px;position: fixed;width: 100%;height: 100%;">`
+          this.#lightBulbs.innerHTML = ''
+          this.#str = ``
 
           for (let i = 0; i != Math.floor(document.documentElement.clientWidth / 120); i++) {
             for (let i = 0; i != Math.floor(document.documentElement.clientHeight / 120); i++) {
               this.#str += `<div style="width: 100px;height: 100px;background-color: #${color[Math.round(Math.random() * (color.length - 1) + 0)]}; border-radius: 50px;transition: 0.5s;filter: opacity(0);></div>`
             }
           }
-          this.#str += `</div>`
-          this.#body.innerHTML += this.#str
+          this.#lightBulbs.innerHTML = this.#str
           setTimeout(() => {
-            this.#grid = document.querySelectorAll('.lightBulbs div')
+            this.#grid = document.querySelectorAll('.lightBulbs div')  as NodeListOf<HTMLDivElement>
             for (let i of this.#grid) {
               i.style.filter = "opacity(1)"
             }
@@ -271,7 +272,7 @@ class LightBulbsPC {
         this.#str+=s+'"></div>'
       })
       // this.#str += `</div>`
-      this.#lightBulbs.innerHTML += this.#str
+      this.#lightBulbs.innerHTML = this.#str
           setTimeout(() => {
             this.#grid = document.querySelectorAll('.lightBulbs div')
             for (let i of this.#grid) {
