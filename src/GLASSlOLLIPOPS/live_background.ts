@@ -234,15 +234,14 @@ class LightBulbsPC {
       })
       this.#str += `</div>`
       this.#body.innerHTML += this.#str
-      
       setInterval(() => {
-        // this.#lightBulbs = document?.querySelectorAll('.lightBulbs div')
-        // this.#lightBulbs.innerHTML = ''
+        this.#lightBulbs = document?.querySelector('.lightBulbs')
         this.#arrDiv =[]
         this.#grid = document?.querySelectorAll('.lightBulbs div') as NodeListOf<HTMLDivElement>
         for (let i of this.#grid) {
           i.style.filter = "opacity(0)"
         }
+        this.#lightBulbs.innerHTML = ''
 
         setTimeout(() => {
           this.#str = `<div class="lightBulbs" style="display: grid; justify-content: space-around; ${this.#colum}; grid-auto-rows:${this.#row}; gap: 20px;position: fixed;width: 100%;height: 100%;">`
