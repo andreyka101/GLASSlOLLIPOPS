@@ -158,6 +158,7 @@ class LightBulbsPC {
 
       for (let i = 0; i != Math.floor(document.documentElement.clientWidth / 120); i++) {
         for (let i = 0; i != Math.floor(document.documentElement.clientHeight / 120); i++) {
+          console.log(1);
           this.#str += `<div style="width: 100px;height: 100px;background-color: #${color[Math.round(Math.random() * (color.length - 1) + 0)]}; border-radius: 50px;transition: 0.5s;"></div>`
         }
       }
@@ -168,23 +169,23 @@ class LightBulbsPC {
         this.#lightBulbs = document?.querySelector('.lightBulbs')
         this.#grid = document?.querySelectorAll('.lightBulbs div') as NodeListOf<HTMLDivElement>
         for (let i of this.#grid) {
-          i.style.filter = "opacity(0)"
         }
-
+        
         setTimeout(() => {
           this.#lightBulbs.innerHTML = ''
+          
           this.#str = ``
-
           for (let i = 0; i != Math.floor(document.documentElement.clientWidth / 120); i++) {
             for (let i = 0; i != Math.floor(document.documentElement.clientHeight / 120); i++) {
-              this.#str += `<div style="width: 100px;height: 100px;background-color: #${color[Math.round(Math.random() * (color.length - 1) + 0)]}; border-radius: 50px;transition: 0.5s;filter: opacity(0);></div>`
+              console.log(1);
+              this.#str += `<div style="width: 100px;height: 100px;background-color: #${color[Math.round(Math.random() * (color.length - 1) + 0)]}; border-radius: 50px;transition: 0.5s;filter: opacity(0);"></div>`
             }
           }
-          this.#lightBulbs.innerHTML = this.#str
+          console.log(this.#str.length);
+          this.#lightBulbs.innerHTML += this.#str
           setTimeout(() => {
             this.#grid = document.querySelectorAll('.lightBulbs div')  as NodeListOf<HTMLDivElement>
             for (let i of this.#grid) {
-              i.style.filter = "opacity(1)"
             }
           }, 1000)
         }, 1000)
