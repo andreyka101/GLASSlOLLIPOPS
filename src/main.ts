@@ -15,11 +15,12 @@ let liveBackground = new LiveBackgroundMod()
 //     '<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 455.323 455.323" style="enable-background:new 0 0 455.323 455.323;" xml:space="preserve"><g><polygon points="361.877,71.35 381.797,59.849 347.243,0 268.173,45.651 362.025,70.799 "/><polygon points="268.333,125.357 325.833,92.16 231.982,67.012 232.129,66.461 174.629,99.659 268.481,124.807 "/><polygon points="174.788,179.366 232.289,146.167 138.437,121.02 138.584,120.47 81.084,153.667 174.936,178.815 "/><polygon points="365.582,240.503 299.672,240.503 299.832,240.664 248.135,292.361 313.724,292.361 "/><polygon points="407.687,240.503 407.848,240.664 356.151,292.361 430.203,292.361 430.203,240.503 "/><polygon points="205.709,292.361 257.566,240.503 191.655,240.503 191.816,240.664 140.118,292.361 "/><rect x="58.247" y="322.361" width="371.956" height="132.963"/><polygon points="58.247,292.361 97.692,292.361 149.55,240.503 68.894,240.503 138.744,200.176 44.893,175.028 45.04,174.477 25.12,185.978 58.247,243.356 "/></g></svg>',
 // ])
 // liveBackground.Color.deleteALL()
-// liveBackground.Color.append(["ffffff"])
+// liveBackground.Color.append(["fffc26"])
 // liveBackground.BackgroundPC.Classic.start()
-// liveBackground.BackgroundPhone.Classic.start()
+liveBackground.BackgroundPhone.Classic.start()
 
-// liveBackground.BackgroundPC.LightBulbs.flashing("#d00000",2)
-liveBackground.BackgroundPC.LightBulbs.constantlyOn()
+// liveBackground.BackgroundPC.LightBulbs.flashing("#d00000",6)
+liveBackground.BackgroundPC.LightBulbs.flashing()
+// liveBackground.BackgroundPC.LightBulbs.constantlyOn()
 
 
