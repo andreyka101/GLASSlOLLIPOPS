@@ -286,6 +286,162 @@ class LightBulbsPC {
   }
 }
 
+// LightBulbsPhone
+
+class LightBulbsPhone {
+  #body = document.querySelector('body') as HTMLBodyElement
+  #grid: any
+  #str = "" as string
+  #colum = "grid-template-columns:" as string
+  #row = "grid-template-rows:" as string
+  #arrDiv = [] as Array<string>
+  #rund = 0
+  #lightBulbs : any
+
+  constantlyOn() {
+    console.log(document.documentElement.clientWidth / 120);
+
+    if (document.documentElement.clientWidth < 850) {
+
+      for (let i = 0; i != Math.floor(document.documentElement.clientWidth / 120); i++) {
+        this.#colum += "100px "
+      }
+      for (let i = 0; i != Math.floor(document.documentElement.clientHeight / 120); i++) {
+        this.#row += "100px "
+      }
+
+      this.#str = `<div class="lightBulbs" style="display: grid; justify-content: space-around; ${this.#colum}; grid-auto-rows:${this.#row}; gap: 20px;position: fixed;width: 100%;height: 100%;">`
+
+      for (let i = 0; i != Math.floor(document.documentElement.clientWidth / 120); i++) {
+        for (let i = 0; i != Math.floor(document.documentElement.clientHeight / 120); i++) {
+          console.log(1);
+          this.#str += `<div style="width: 100px;height: 100px;background-color: #${color[Math.round(Math.random() * (color.length - 1) + 0)]}; border-radius: 50px;transition: 0.5s;"></div>`
+        }
+      }
+      this.#str += `</div>`
+      this.#body.innerHTML += this.#str
+
+      setInterval(() => {
+        this.#lightBulbs = document?.querySelector('.lightBulbs')
+        this.#grid = document?.querySelectorAll('.lightBulbs div') as NodeListOf<HTMLDivElement>
+        for (let i of this.#grid) {
+        }
+        
+        setTimeout(() => {
+          this.#lightBulbs.innerHTML = ''
+          
+          this.#str = ``
+          for (let i = 0; i != Math.floor(document.documentElement.clientWidth / 120); i++) {
+            for (let i = 0; i != Math.floor(document.documentElement.clientHeight / 120); i++) {
+              console.log(1);
+              this.#str += `<div style="width: 100px;height: 100px;background-color: #${color[Math.round(Math.random() * (color.length - 1) + 0)]}; border-radius: 50px;transition: 0.5s;filter: opacity(0);"></div>`
+            }
+          }
+          console.log(this.#str.length);
+          this.#lightBulbs.innerHTML += this.#str
+          setTimeout(() => {
+            this.#grid = document.querySelectorAll('.lightBulbs div')  as NodeListOf<HTMLDivElement>
+            for (let i of this.#grid) {
+            }
+          }, 1000)
+        }, 1000)
+      }, 15000)
+    }
+  }
+
+
+
+  flashing(col="no" , num=1) {
+    
+    console.log(col);
+
+    if (document.documentElement.clientWidth < 850) {
+
+      for (let i = 0; i != Math.floor(document.documentElement.clientWidth / 120); i++) {
+        this.#colum += "100px "
+      }
+      for (let i = 0; i != Math.floor(document.documentElement.clientHeight / 120); i++) {
+        this.#row += "100px "
+      }
+
+      
+        this.#str = `<div class="lightBulbs" style="display: grid; justify-content: space-around; ${this.#colum}; grid-auto-rows:${this.#row}; gap: 20px;position: fixed;width: 100%;height: 100%;">`
+        for (let i = 0; i != Math.floor(document.documentElement.clientWidth / 120); i++) {
+        for (let i = 0; i != Math.floor(document.documentElement.clientHeight / 120); i++) {
+          switch (Math.round(Math.random() * (3 - 1) + 0)) {
+            case 0:
+              this.#arrDiv.push(`<div style="width: 100px;height: 100px;background-color: #${color[Math.round(Math.random() * (color.length - 1) + 0)]}; border-radius: 50px;transition: 0.5s;`)
+              break;
+            case 1:
+              this.#arrDiv.push(`<div style="width: 100px;height: 100px;background-color: #ffffff00; border-radius: 50px;transition: 0.5s;`)
+              break;
+            case 2:
+              this.#arrDiv.push(`<div style="width: 100px;height: 100px;background-color: #ffffff00; border-radius: 50px;transition: 0.5s;`)
+              break;
+          }
+        }
+      }
+      if (col != 'no'){
+        for (let i=0;i!=num;i++){
+          this.#rund = Math.round(Math.random() * (this.#arrDiv.length - 1) + 0)
+          this.#arrDiv[this.#rund] = this.#arrDiv[this.#rund] + `background-color: ${col};`
+        }
+      }
+      this.#arrDiv.map((s)=>{
+        this.#str+=s+'"></div>'
+      })
+      this.#str += `</div>`
+      this.#body.innerHTML += this.#str
+      setInterval(() => {
+        this.#lightBulbs = document?.querySelector('.lightBulbs')
+        this.#arrDiv =[]
+        this.#grid = document?.querySelectorAll('.lightBulbs div') as NodeListOf<HTMLDivElement>
+        for (let i of this.#grid) {
+          i.style.filter = "opacity(0)"
+        }
+        
+        setTimeout(() => {
+          this.#lightBulbs.innerHTML = ''
+          // this.#str = `<div class="lightBulbs" style="display: grid; justify-content: space-around; ${this.#colum}; grid-auto-rows:${this.#row}; gap: 20px;position: fixed;width: 100%;height: 100%;">`
+          this.#str = ``
+        for (let i = 0; i != Math.floor(document.documentElement.clientWidth / 120); i++) {
+        for (let i = 0; i != Math.floor(document.documentElement.clientHeight / 120); i++) {
+          switch (Math.round(Math.random() * (3 - 1) + 0)) {
+            case 0:
+              this.#arrDiv.push(`<div style="width: 100px;height: 100px;background-color: #${color[Math.round(Math.random() * (color.length - 1) + 0)]}; border-radius: 50px;transition: 0.5s;filter: opacity(0);`)
+              break;
+            case 1:
+              this.#arrDiv.push(`<div style="width: 100px;height: 100px;background-color: #ffffff00; border-radius: 50px;transition: 0.5s;filter: opacity(0);`)
+              break;
+            case 2:
+              this.#arrDiv.push(`<div style="width: 100px;height: 100px;background-color: #ffffff00; border-radius: 50px;transition: 0.5s;filter: opacity(0);`)
+              break;
+          }
+        }
+      }
+      if (col != 'no'){
+        for (let i=0;i!=num;i++){
+          this.#rund = Math.round(Math.random() * (this.#arrDiv.length - 1) + 0)
+          this.#arrDiv[this.#rund] = this.#arrDiv[this.#rund] + `background-color: ${col};`
+        }
+      }
+      this.#arrDiv.map((s)=>{
+        this.#str+=s+'"></div>'
+      })
+      // this.#str += `</div>`
+      this.#lightBulbs.innerHTML = this.#str
+          setTimeout(() => {
+            this.#grid = document.querySelectorAll('.lightBulbs div')
+            for (let i of this.#grid) {
+              i.style.filter = "opacity(1)"
+            }
+          }, 1000)
+        }, 1000)
+      }, 15000)
+    }
+  }
+}
+
 
 
 // Color
@@ -312,4 +468,5 @@ class BackgroundPC {
 }
 class BackgroundPhone {
   Classic = new ClassicPhone()
+  LightBulbs = new LightBulbsPhone()
 }
