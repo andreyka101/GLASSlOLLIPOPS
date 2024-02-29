@@ -169,6 +169,7 @@ class LightBulbsPC {
         this.#lightBulbs = document?.querySelector('.lightBulbs')
         this.#grid = document?.querySelectorAll('.lightBulbs div') as NodeListOf<HTMLDivElement>
         for (let i of this.#grid) {
+          i.style.filter = "opacity(0)"
         }
         
         setTimeout(() => {
@@ -186,6 +187,7 @@ class LightBulbsPC {
           setTimeout(() => {
             this.#grid = document.querySelectorAll('.lightBulbs div')  as NodeListOf<HTMLDivElement>
             for (let i of this.#grid) {
+              i.style.filter = "opacity(1)"
             }
           }, 1000)
         }, 1000)
@@ -325,6 +327,7 @@ class LightBulbsPhone {
         this.#lightBulbs = document?.querySelector('.lightBulbs')
         this.#grid = document?.querySelectorAll('.lightBulbs div') as NodeListOf<HTMLDivElement>
         for (let i of this.#grid) {
+          i.style.filter = "opacity(0)"
         }
         
         setTimeout(() => {
@@ -342,6 +345,7 @@ class LightBulbsPhone {
           setTimeout(() => {
             this.#grid = document.querySelectorAll('.lightBulbs div')  as NodeListOf<HTMLDivElement>
             for (let i of this.#grid) {
+              i.style.filter = "opacity(1)"
             }
           }, 1000)
         }, 1000)
