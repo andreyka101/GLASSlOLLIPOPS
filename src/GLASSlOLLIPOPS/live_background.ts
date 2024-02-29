@@ -154,7 +154,7 @@ class LightBulbsPC {
         this.#row += "100px "
       }
 
-      this.#str = `<div class="lightBulbs" style="display: grid; justify-content: space-around; ${this.#colum}; grid-auto-rows:${this.#row}; gap: 20px;position: fixed;width: 100%;height: 100%;">`
+      this.#str = `<div class="lightBulbs" style="display: grid; justify-content: space-around; ${this.#colum}; grid-auto-rows:${this.#row}; gap: 20px;position: fixed;width: 100%;height: 100%;z-index: -50; top:0;">`
 
       for (let i = 0; i != Math.floor(document.documentElement.clientWidth / 120); i++) {
         for (let i = 0; i != Math.floor(document.documentElement.clientHeight / 120); i++) {
@@ -211,7 +211,7 @@ class LightBulbsPC {
       }
 
       
-        this.#str = `<div class="lightBulbs" style="display: grid; justify-content: space-around; ${this.#colum}; grid-auto-rows:${this.#row}; gap: 20px;position: fixed;width: 100%;height: 100%;">`
+        this.#str = `<div class="lightBulbs" style="display: grid; justify-content: space-around; ${this.#colum}; grid-auto-rows:${this.#row}; gap: 20px;position: fixed;width: 100%;height: 100%;z-index: -50; top:0;">`
         for (let i = 0; i != Math.floor(document.documentElement.clientWidth / 120); i++) {
         for (let i = 0; i != Math.floor(document.documentElement.clientHeight / 120); i++) {
           switch (Math.round(Math.random() * (3 - 1) + 0)) {
@@ -312,7 +312,7 @@ class LightBulbsPhone {
         this.#row += "100px "
       }
 
-      this.#str = `<div class="lightBulbs" style="display: grid; justify-content: space-around; ${this.#colum}; grid-auto-rows:${this.#row}; gap: 20px;position: fixed;width: 100%;height: 100%;">`
+      this.#str = `<div class="lightBulbs" style="display: grid; justify-content: space-around; ${this.#colum}; grid-auto-rows:${this.#row}; gap: 20px;position: fixed;width: 100%;height: 100%;z-index: -50; top:0;">`
 
       for (let i = 0; i != Math.floor(document.documentElement.clientWidth / 120); i++) {
         for (let i = 0; i != Math.floor(document.documentElement.clientHeight / 120); i++) {
@@ -369,7 +369,7 @@ class LightBulbsPhone {
       }
 
       
-        this.#str = `<div class="lightBulbs" style="display: grid; justify-content: space-around; ${this.#colum}; grid-auto-rows:${this.#row}; gap: 20px;position: fixed;width: 100%;height: 100%;">`
+        this.#str = `<div class="lightBulbs" style="display: grid; justify-content: space-around; ${this.#colum}; grid-auto-rows:${this.#row}; gap: 20px;position: fixed;width: 100%;height: 100%;z-index: -50; top:0;">`
         for (let i = 0; i != Math.floor(document.documentElement.clientWidth / 120); i++) {
         for (let i = 0; i != Math.floor(document.documentElement.clientHeight / 120); i++) {
           switch (Math.round(Math.random() * (3 - 1) + 0)) {
