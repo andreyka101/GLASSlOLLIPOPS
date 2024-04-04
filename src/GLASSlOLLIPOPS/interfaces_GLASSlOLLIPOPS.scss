@@ -294,6 +294,19 @@ font-size: 15px;
     padding: 10px 25px 10px;
   }
 }
+@media screen and (max-width: 430px) {
+    .GLASSlOLLIPOPS_span {
+        // background-color: #e9cd8f;
+          display: inline-flex;
+          flex-direction: column;
+          align-items: center;
+      }
+      .GLASSlOLLIPOPS_div {
+          width: auto;
+          display: block;
+          margin: 10px 6px;
+        }
+    }
 @media screen and (max-width: 340px) {
   .GLASSlOLLIPOPS_header{
     h1{
